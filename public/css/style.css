@@ -1,0 +1,324 @@
+
+/*****global****/
+
+
+* {
+--primary-blue: #312E81;
+--secondary-blue: #4338CA;
+--primary-mint: #ECFDF5;
+box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+    background-color: var(--primary-mint);
+}
+
+/*****global****/
+/*****main.handlebars****/
+
+header {
+    background-color: var(--primary-blue);
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.25rem;
+}
+nav li {
+    margin-left: 3rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+header h1 {
+    margin-left: 3rem;
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    background-color: white;
+    display: inline-block;
+    border-radius: .2rem;
+    padding: .5rem;
+    margin-top: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-mint);
+    height: calc(100vh - 10.75rem)
+}
+
+/*****main.handlebars****/
+/*****signup.handlebars/login.handlebars****/ 
+
+.signup-login-form {
+    border: 1px solid var(--primary-blue);
+    margin-top: 2rem;
+    width: calc(100% - 5rem);
+    max-width: 40rem;
+    height: 18rem;
+}
+
+.sign-up-login-form-header {
+    background-color: var(--primary-blue);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: medium;
+    padding: 1rem;
+}
+
+.sign-up-login-form-header h3 {
+    margin-left: .5rem;
+}
+
+.signup-login-form-element-container {
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+    padding-bottom: 2rem;
+    padding-top: .5rem;
+}
+.signup-login-form-element-container > * {
+    display: block;
+    width: 100%;
+}
+
+.signup-login-form-element-container input {
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.signup-login-form-element-container button {
+    height: 2.5rem;
+    width: calc(100% + .5rem);
+    background-color: var(--secondary-blue);
+    color: white; 
+    font-size: 1rem;
+    font-weight: medium;
+    border: none;
+    border-radius: .5rem;
+}
+
+.signup-login-form-element-container a {
+    margin-top: .5rem;
+    text-decoration: none;
+    color: blue;
+}
+
+/*****signup.handlebars/login.handlebars****/ 
+/*****homepage.handlebarsr*****/
+
+.homepage-container {
+    width: calc(100% - 5rem);
+    max-width: 60rem;
+}
+
+/*****homepage.handlebarsr*****/
+/*****blogpost.handlebarsr*****/
+
+.blog-post-container {
+    width: calc(100% - 5rem);
+    max-width: 60rem;
+}
+
+.blog-post {
+    margin-top: 1rem;
+    border: 1px solid var(--primary-blue);
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.blog-post-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-blue);
+    color: white;
+    font-weight: medium;
+    padding: 1rem;
+}
+
+.blog-post-header h3 {
+    font-size: 1.25rem;
+}
+
+.blog-post div {
+    font-size: .75rem;
+    display: flex;
+}
+
+.blog-post a {
+    color: white;
+    margin-right: .5rem;
+    margin-top: .2rem;
+}
+
+.blog-post-header p {
+    opacity: 85%;
+    margin-top: .2rem;
+}
+
+.blog-post-content {
+    padding: 20px
+}
+
+.blog-post-content p{
+    line-height: 1.25rem;
+}
+
+.comment-container {
+    margin-top: 1.5rem;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.comment label {
+    font-size: .75rem;
+}
+
+.comment textarea {
+    width: 80%;
+}
+
+
+
+/*****blogpost.handlebarsr*****/
+
+
+/*****dashboard.handlebars****/
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 5rem);
+    max-width: 60rem; 
+}
+
+.dashboard-new-post-btn {
+    background-color: var(--secondary-blue);
+    height: 3rem; 
+    font-size: 1rem;
+    color: white;
+    width: 10rem;
+    border: none;
+    border-radius: .25rem;
+    margin-bottom: 4rem;
+}
+
+/****dashboard.handlebars*****/
+/****dashboardpost.handlebars*****/
+
+.dashboard-post {
+    display: flex;
+    justify-content: space-between;
+    font-weight: medium;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid var(--primary-blue);
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.dashboard-post div {
+    margin-top: .2rem;
+    display: flex;
+}
+.dashboard-post a {
+    text-decoration: none;
+    color: blue;
+    margin-right: 1rem;
+    font-size: .75rem;
+}
+
+.dashboard-post p {
+    text-decoration: none;
+    font-size: .75rem;
+}
+
+.dashboard-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+/****dashboardpost.handlebars*****/
+/****editpost.handlebars/create-new-post.handlebars*****/
+
+.create-edit-post-form {
+    border: 1px solid var(--primary-blue);
+    margin-top: 2rem;
+    width: calc(100% - 5rem);
+    max-width: 40rem;
+    height: 20rem;
+}
+
+.create-edit-post-form-header {
+    background-color: var(--primary-blue);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: medium;
+    padding: 1rem;
+}
+
+.create-edit-post-form-header h3 {
+    margin-left: .5rem;
+}
+
+.create-edit-post-form-element-container {
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+    padding-bottom: 2rem;
+    padding-top: .5rem;
+}
+.create-edit-post-form-element-container > * {
+    display: block;
+    width: 100%;
+}
+
+.create-edit-post-form-element-container input {
+    margin-top: .2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.create-edit-post-form-element-container button {
+    height: 2.5rem;
+    width: calc(100% + .5rem);
+    background-color: var(--secondary-blue);
+    color: white; 
+    font-size: 1rem;
+    font-weight: medium;
+    border: none;
+    border-radius: .5rem;
+}
+
+.create-edit-post-form-element-container a {
+    margin-top: .5rem;
+    text-decoration: none;
+    color: blue;
+}
+
+.create-edit-post-textarea {
+    margin-top: .2rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.edit-post-btn {
+    display: inline-block !important;
+    width: 49.5% !important;
+}
+
+
+
+/****editpost.handlebars/create-new-post.handlebars*****/
