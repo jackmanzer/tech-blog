@@ -1,14 +1,15 @@
-<form action="" class="create-edit-post-form">
+<form class="create-edit-post-form" data-id={{id}}>
     <div class="create-edit-post-form-header">
         <h3>Edit Post</h3>
     </div>
     <div class="create-edit-post-form-element-container">
         <label for="">Title</label>
-        <input type="text">
+        <input type="text" placeholder="{{title}}" id="edit-post-title">
         <label for="">Content</label>
-        <textarea class="create-edit-post-textarea"></textarea>
-        <button class="edit-post-btn">update</button>
-        <button class="edit-post-btn">delete</button>
+        <textarea class="create-edit-post-textarea" id="edit-post-content" placeholder="{{content}}"></textarea>
+        <button class="edit-post-btn" id="update-post-btn">update</button>
+        <button class="edit-post-btn" id="delete-post-btn">delete</button>
         <a href="/dashboard">Back to dashboard</a>
     </div>
 </form>
+<script src="/js/editpost.js"></script>

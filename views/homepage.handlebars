@@ -1,18 +1,18 @@
 <div class="homepage-container">
-
+    {{#each blogs as |blog|}}
     <div class="blog-post">
         <div class="blog-post-header">
-            <h3>blog post</h3>
+            <h3>{{blog.title}}</h3>
             <div>
-                <a href="/blogpost">comments</a>
-                <p>posted by xandromus on 5/8/2020</p>
+                <a href="/blogpost/{{blog.id}}">view</a>
+                <p>posted by {{user.name}} on {{format_date blog.date_created}}</p>
             </div>
         </div>
         <div class="blog-post-content">
-            <p>I'm baby freegan PBR&B before they sold out, forage narwhal tumblr jean shorts messenger bag ennui next level plaid neutra biodiesel slow-carb disrupt.</p>
+            <p>{{blog.content}}</p>
         </div>
     </div>
-
+    {{/each}}
 </div>
 
 

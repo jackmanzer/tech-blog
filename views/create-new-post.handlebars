@@ -1,13 +1,14 @@
-<form action="" class="create-edit-post-form">
+<form action="" class="create-edit-post-form" id="create-edit-post-form">
     <div class="create-edit-post-form-header">
         <h3>Create New Post</h3>
     </div>
     <div class="create-edit-post-form-element-container">
         <label for="">Title</label>
-        <input type="text">
+        <input type="text" id="blog-title">
         <label for="">Content</label>
-        <textarea class="create-edit-post-textarea"></textarea>
-        <button>Create</button>
+        <textarea class="create-edit-post-textarea" id="blog-content"></textarea>
+        <button type="submit">Create</button>
         <a href="/dashboard">Back to dashboard</a>
     </div>
 </form>
+<script src="/js/create-new-post.js"></script>

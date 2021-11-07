@@ -1,13 +1,16 @@
-<form action="" class="signup-login-form">
+<form class="signup-login-form" id="login-form">
     <div class="sign-up-login-form-header">
         <h3>Login</h3>
     </div>
     <div class="signup-login-form-element-container">
         <label for="">Username</label>
-        <input type="text">
+        <input type="text" id="name-login">
         <label for="">Password</label>
-        <input type="text">
-        <button>Login</button>
-        <a href="/">Back to home</a>
+        <input type="text" id="password-login">
+        <button type="submit">Login</button>
+        <a href="/signup">Sign up instead</a>
     </div>
 </form>
+
+<script src="/js/login.js"></script>
+

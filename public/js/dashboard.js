@@ -6,3 +6,4 @@ const newPostButton = document.querySelector(".dashboard-new-post-btn");
 newPostButton.addEventListener('click', () => {
     document.location.replace('dashboard/create-new-post');
 })
+

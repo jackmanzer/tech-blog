@@ -1,23 +1,38 @@
 <div class="blog-post-container">
 
-    <div class="blog-post">
+    <div class="blog-post" data-id="{{id}}">
         <div class="blog-post-header">
-            <h3>blog post</h3>
+            <h3>{{title}}</h3>
             <div>
-                <p>posted by xandromus on 5/8/2020</p>
+                <p>posted by {{user.name}} on {{format_date date_created}}</p>
             </div>
         </div>
         <div class="blog-post-content">
-            <p>I'm baby freegan PBR&B before they sold out, forage narwhal tumblr jean shorts messenger bag ennui next level plaid neutra biodiesel slow-carb disrupt.</p>
+            <p>{{content}}</p>
         </div>
     </div>
 
-    <div class="comment-container">
-        <div class="comment">
-            <label for="">Jack</label>
-            <textarea></textarea>
+
+    <div class="comment-section-container">
+        <form class="add-comment-form" id="add-comment-form">
+            <label>Your Message</label>
+            <input type="text" id="comment-content">
+            <button type='submit'>send</button>
+        </form>
+        <div class="comment-container">
+            <ul>
+                {{#each comments as |comment|}}
+                <li class="comment">
+                    <span class="comment-name">{{user.name}}</span>
+                    <span class="comment-content">{{content}}</span>
+                    <span class="comment-date">{{format_date date_created}}</span>
+                </li>
+                {{/each }}
+            </div>
+            </ul>
         </div>
     </div>
-
 </div>
+<script src="/js/blogpost.js"></script>
+
 
