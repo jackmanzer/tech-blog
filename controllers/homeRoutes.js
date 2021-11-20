@@ -40,9 +40,9 @@ router.get('/dashboard', withAuth, async (req, res) => {
           include: [{ model: Blogpost }],
         });
     
-        const user= userData.get({ plain: true });
+        const user = userData.get({ plain: true });
 
-        res.render('dashboard', {
+          res.render('dashboard', {
             ...user,
             logged_in: true
           });
